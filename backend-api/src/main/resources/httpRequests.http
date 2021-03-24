@@ -1,0 +1,31 @@
+### Get all Albums
+GET  localhost:8080/api/albums
+
+
+### Delete an Album
+DELETE localhost:8080/api/albums/1
+
+
+### Add an Album
+POST localhost:8080/api/albums
+Content-Type: application/json
+
+{
+"name": "bob",
+"url": ""
+}
+
+
+### Add a Song
+POST localhost:8080/api/songs
+
+
+### Edit an Album
+PUT localhost:8080/api/albums/4
+Content-Type: application/json
+
+{
+  "id": 4,
+"name": "bobbbbbb",
+"url": ""
+}
