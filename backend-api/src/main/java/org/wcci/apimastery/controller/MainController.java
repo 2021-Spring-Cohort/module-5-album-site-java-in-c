@@ -35,5 +35,11 @@ public class MainController {
     public void deleteSong(@PathVariable long id){
         songStorage.deleteSongById(id);
     }
+    @PutMapping("/api/albums/{id}")
+    public void editAlbums(@PathVariable long id, @RequestBody Album album){
+        if (0 != album.getId() && album.getId()==id){
+            albumStorage.saveAlbum(album);
+        }
+    }
 
 }
