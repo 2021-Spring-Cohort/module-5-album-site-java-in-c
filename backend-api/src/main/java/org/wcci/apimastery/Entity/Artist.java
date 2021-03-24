@@ -1,5 +1,7 @@
 package org.wcci.apimastery.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,9 +16,11 @@ public class Artist {
     @GeneratedValue
     private long id;
     private String name;
+    @JsonIgnore
     @ManyToMany
     private Collection<Album> albums;
     @ManyToMany(mappedBy = "artists")
+    @JsonIgnore
     private Collection<Song> songs;
 
     public Artist(String name) {

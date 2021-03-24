@@ -1,5 +1,7 @@
 package org.wcci.apimastery.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +14,7 @@ public class Song {
     private long id;
     private String name;
     private String lyrics;
+    @JsonIgnore
     @ManyToOne
     private Album album;
     @ManyToMany
