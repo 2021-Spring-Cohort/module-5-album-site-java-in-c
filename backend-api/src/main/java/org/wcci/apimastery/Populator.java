@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wcci.apimastery.Entity.Album;
 import org.wcci.apimastery.Entity.Artist;
+import org.wcci.apimastery.Entity.Comment;
 import org.wcci.apimastery.Entity.Song;
 import org.wcci.apimastery.Service.AlbumRepository;
 import org.wcci.apimastery.Service.ArtistRepository;
@@ -25,14 +26,13 @@ public class Populator implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Album album1 = new Album("test1", "Testurl");
-        Song song1 = new Song("songName", "lyrics", album1);
+        Song song1 = new Song("songName", "lyrics",1, album1);
+        song1.addComment(new Comment("mehh","Camel"));
         Artist artist1 = new Artist("John");
 
         albumRepository.save(album1);
         songRepository.save(song1);
         artistRepository.save(artist1);
-
-
 
     }
 }
