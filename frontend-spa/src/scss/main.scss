@@ -1,0 +1,18 @@
+$main-text-color: red;
+$heading-font: 10px;
+$Submain-text-color: rgb(214, 112, 112);
+$border: 1px solid blue;
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@import "./header";
+@import "./main";
+@import "./footer";
