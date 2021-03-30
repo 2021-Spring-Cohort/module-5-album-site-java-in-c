@@ -24,13 +24,19 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Album album1 = new Album("test1", "Testurl");
-        Song song1 = new Song("songName", "lyrics", album1);
-        Artist artist1 = new Artist("John");
+        Album album1 = new Album("...And Justice For All", "/src/images/metallica.jpg");
+        Song song1 = new Song("Blackened", "sample", album1);
+        Artist artist1 = new Artist("Metallica");
 
         albumRepository.save(album1);
-        songRepository.save(song1);
+
+        artist1.addAlbum(album1);
         artistRepository.save(artist1);
+
+        song1.addArtist(artist1);
+        songRepository.save(song1);
+
+
 
 
 
