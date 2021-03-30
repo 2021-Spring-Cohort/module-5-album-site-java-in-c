@@ -19,7 +19,7 @@ public class AlbumStorage {
         albumRepo.save(album);
     }
 
-    public void deleteArtistById(long id) {
+    public void deleteAlbumById(long id) {
         albumRepo.deleteById(id);
     }
 
