@@ -31,18 +31,8 @@ main {
       ._mainSongContent {
         height: 75%;
         background-color: rgb(184, 184, 184);
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-          width: 5px;
-        }
-
-        &::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        }
-
-        &::-webkit-scrollbar-thumb {
-          background-color: darkgrey;
-        }
+        
+      
         ._songNav {
           height: 10%;
           background-color: indianred;
@@ -68,6 +58,18 @@ main {
           height: 90%;
           display: flex;
           flex-direction: column;
+          overflow-y: scroll;
+          &::-webkit-scrollbar {
+            width: 5px;
+          }
+  
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          }
+  
+          &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+          }
           justify-content: flex-start;
           ._singleSong {
             height: 25px;
@@ -116,7 +118,9 @@ main {
       flex-wrap: wrap;
       ._singleAlbum {
         height: 150px;
-        background-color: crimson;
+        background-image: url("/src/images/metallica.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 150px;
         margin: 2%;
         cursor: pointer;
