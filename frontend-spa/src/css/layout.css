@@ -9,7 +9,7 @@
 
 ._container header {
   grid-column: 1 / 4;
-  background-color: #f05757;
+  background-color: #3b6596;
   display: flex;
   align-items: center;
   justify-content: space-around;

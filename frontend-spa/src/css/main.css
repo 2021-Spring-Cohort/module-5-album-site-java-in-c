@@ -43,7 +43,7 @@ body {
 }
 
 main {
-  background-image: url("https://wallpaperaccess.com/full/1441195.jpg");
+  background-color: azure;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,16 +62,40 @@ main ._songs ._songContainer ._songHeader {
   height: 25%;
   display: flex;
   justify-content: center;
-  background-color: #dbb3b3;
+  align-items: center;
+  background: linear-gradient(to top left, #444343, #302f2f, gray);
+}
+
+main ._songs ._songContainer ._songHeader ._headerSkip {
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+main ._songs ._songContainer ._songHeader ._headerSkip:hover {
+  transform: scale(1.02);
 }
 
 main ._songs ._songContainer ._mainSongContent {
   height: 75%;
-  background-color: hotpink;
+  background-color: #b8b8b8;
+  overflow-y: scroll;
+}
+
+main ._songs ._songContainer ._mainSongContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._songs ._songContainer ._mainSongContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._songs ._songContainer ._mainSongContent::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songNav {
-  height: 15%;
+  height: 10%;
   background-color: indianred;
   display: flex;
   justify-content: space-evenly;
@@ -79,32 +103,64 @@ main ._songs ._songContainer ._mainSongContent ._songNav {
 }
 
 main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists {
-  border: 1px solid black;
   cursor: pointer;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #8a8a92;
+  transition: 1s;
 }
 
-main ._songs ._songContainer ._mainSongContent ._navBarSongLists:hover {
+main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists:hover {
   background-color: lightcyan;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList {
-  overflow-y: scroll;
-  height: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._singleSong {
+  height: 25px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._singleSong:hover {
+  background-color: #aeaeb1;
 }
 
 main ._albums {
-  background-color: chocolate;
+  background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
   grid-row: 1 / 5;
   grid-column: 3 / 6;
-  background-image: url("https://wallpaperaccess.com/full/1441195.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+}
+
+main ._albums::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._albums::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._albums::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
 
 main ._albums ._albumStorage {
@@ -121,6 +177,14 @@ main ._albums ._albumStorage ._singleAlbum {
   background-color: crimson;
   width: 150px;
   margin: 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main ._albums ._albumStorage ._singleAlbum:hover {
+  background-color: #a4a4cc;
+  transform: scale(1.05);
 }
 
 footer ._footerLine {
