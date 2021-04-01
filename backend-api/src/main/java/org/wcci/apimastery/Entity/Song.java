@@ -14,7 +14,6 @@ public class Song {
     private long id;
     private String name;
     private String lyrics;
-    public int rating;
     @JsonIgnore
     @ManyToOne
     private Album album;
@@ -29,19 +28,12 @@ public class Song {
     public Song(String name, String lyrics, int rating, Album album) {
         this.name = name;
         this.lyrics = lyrics;
-//        this.rating = rating;
         this.album = album;
         artists = new ArrayList<>();
     }
 
     public void addArtist(Artist artist) {
         artists.add(artist);
-    }
-    public void addComment(Comment newComment) {
-        if (comments == null) {
-            comments = new ArrayList<>();
-        }
-        comments.add(newComment);
     }
 
     public long getId() {
