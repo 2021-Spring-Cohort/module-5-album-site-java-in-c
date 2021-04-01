@@ -19,11 +19,13 @@ public class Song {
     private Album album;
     @ManyToMany
     private Collection<Artist> artists;
+    @ElementCollection
+    private Collection<Comment> comments;
 
     protected Song() {
 
     }
-    public Song(String name, String lyrics, Album album) {
+    public Song(String name, String lyrics, int rating, Album album) {
         this.name = name;
         this.lyrics = lyrics;
         this.album = album;

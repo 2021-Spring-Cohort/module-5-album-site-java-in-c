@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
@@ -31,14 +30,12 @@ body {
 
 ._headerMenu {
   padding: 20px;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  transition-delay: 1s;
 }
 
 ._headerMenu :hover {
   cursor: pointer;
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 ._headerMenu img {
@@ -53,11 +50,7 @@ main {
 
 main ._songs {
   background-color: #c7c9c6;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
   grid-row: 1 / 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1 / 3;
 }
 
@@ -67,29 +60,20 @@ main ._songs ._songContainer {
 
 main ._songs ._songContainer ._songHeader {
   height: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, right bottom, left top, from(#444343), color-stop(#302f2f), to(gray));
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to top left, #444343, #302f2f, gray);
 }
 
 main ._songs ._songContainer ._songHeader ._headerSkip {
   font-size: 50px;
   cursor: pointer;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 main ._songs ._songContainer ._songHeader ._headerSkip:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 main ._songs ._songContainer ._mainSongContent {
@@ -100,32 +84,19 @@ main ._songs ._songContainer ._mainSongContent {
 main ._songs ._songContainer ._mainSongContent ._songNav {
   height: 10%;
   background-color: indianred;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists {
   cursor: pointer;
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #8a8a92;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -135,17 +106,10 @@ main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists:hover
 
 main ._songs ._songContainer ._mainSongContent ._songList {
   height: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow-y: scroll;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar {
@@ -153,8 +117,7 @@ main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar {
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar-thumb {
@@ -165,23 +128,13 @@ main ._songs ._songContainer ._mainSongContent ._songList ._singleSong {
   height: 25px;
   width: 100%;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   padding: 15px;
   font-size: 20px;
   letter-spacing: 1px;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
@@ -191,11 +144,7 @@ main ._songs ._songContainer ._mainSongContent ._songList ._singleSong:hover {
 
 main ._albums {
   background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
   grid-row: 1 / 5;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
   grid-column: 3 / 6;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,8 +156,7 @@ main ._albums::-webkit-scrollbar {
 }
 
 main ._albums::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 main ._albums::-webkit-scrollbar-thumb {
@@ -218,17 +166,10 @@ main ._albums::-webkit-scrollbar-thumb {
 main ._albums ._albumStorage {
   height: auto;
   margin: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 main ._albums ._albumStorage ._singleAlbum {
@@ -240,14 +181,12 @@ main ._albums ._albumStorage ._singleAlbum {
   margin: 2%;
   cursor: pointer;
   border-radius: 10px;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 main ._albums ._albumStorage ._singleAlbum:hover {
   background-color: #a4a4cc;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 footer ._footerLine {
