@@ -36,7 +36,7 @@ public class Populator implements CommandLineRunner {
         Song toLiveIsToDie = new Song("To Live Is to Die", "sample", album1);
         Song dyersEve = new Song("Dyers Eve", "sample", album1);
 
-
+        Album album2 = new Album ("1989","");
 
         albumRepository.save(album1);
 
