@@ -17,6 +17,8 @@ public class Album {
     private Collection<Song> songs;
     @ManyToMany(mappedBy = "albums")
     private Collection<Artist> artists;
+    @ElementCollection
+    private Collection<Comment> comments;
 
 
     public Album(String name, String albumCoverUrl) {
@@ -24,8 +26,11 @@ public class Album {
         this.albumCoverUrl = albumCoverUrl;
         this.songs = new ArrayList<>();
         this.artists = new ArrayList<>();
+        this.comments = new ArrayList<>();
     }
-
+    public void addComment(Comment newComment) {
+        comments.add(newComment);
+    }
     public Album() {
 
     }
@@ -49,5 +54,9 @@ public class Album {
 
     public Collection<Artist> getArtists() {
         return artists;
+    }
+
+    public Collection<Comment> getComments() {
+        return comments;
     }
 }

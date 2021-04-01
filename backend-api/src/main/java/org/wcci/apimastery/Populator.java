@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wcci.apimastery.Entity.Album;
 import org.wcci.apimastery.Entity.Artist;
+import org.wcci.apimastery.Entity.Comment;
 import org.wcci.apimastery.Entity.Song;
 import org.wcci.apimastery.Service.AlbumRepository;
 import org.wcci.apimastery.Service.ArtistRepository;
@@ -37,7 +38,6 @@ public class Populator implements CommandLineRunner {
         // Albums ----------------//
         // Albums ----------------//
         // Albums ----------------//
-
         Album NineteenEightyNine  = new Album ("1989","https://images.eil.com/large_image/TAYLOR_SWIFT_1989%2B%28NINETEEN%2BEIGHTY%2BNINE%29-690670.jpg");
         Album EmergencyTsunami = new Album("Emergency Tsunami", "https://cdn.vox-cdn.com/thumbor/7DfkgYcfZsT1i6j1zH63l6abLWs=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22015230/60762fc5e9194b7b624638a8b92f89bb.1000x1000x1.png");
         Album AndJusticeForAll = new Album("...And Justice For All", " /src/images/metallica.jpg");
