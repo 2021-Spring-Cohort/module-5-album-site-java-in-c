@@ -35,7 +35,7 @@ public class Populator implements CommandLineRunner {
         Song frayedEnds = new Song("The Frayed Ends of Sanity", "sample", album1);
         Song toLiveIsToDie = new Song("To Live Is to Die", "sample", album1);
         Song dyersEve = new Song("Dyers Eve", "sample", album1);
-
+// test
 
 
         albumRepository.save(album1);
@@ -61,9 +61,5 @@ public class Populator implements CommandLineRunner {
         songRepository.save(frayedEnds);
         songRepository.save(toLiveIsToDie);
         songRepository.save(dyersEve);
-
-
-
-
     }
 }
