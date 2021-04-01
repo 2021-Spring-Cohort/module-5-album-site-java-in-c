@@ -29,12 +29,14 @@ public class Populator implements CommandLineRunner {
         Album NineteenEightyNine  = new Album ("1989","");
         Album EmergencyTsunami = new Album("Emergency Tsunami", "/src/images/metallica.jpg");
         Album AndJusticeForAll = new Album("...And Justice For All", "/src/images/metallica.jpg");
+        Album igor = new Album("Igor", "/src/images/Igor.jpg");
         // Artists ----------------//
         // Artists ----------------//
         // Artists ----------------//
         Artist Metallica = new Artist("Metallica");
         Artist Nav = new Artist("Nav");
         Artist TylerSwift = new Artist("Tyler Swift");
+        Artist tylerTheCreator = new Artist("Tyler, The Creator");
         // Songs ----------------//
         // Songs ----------------//
         // Songs ----------------//
@@ -63,6 +65,18 @@ public class Populator implements CommandLineRunner {
         Song ThisLove = new Song("ThisLove","sample", NineteenEightyNine);
         Song IknowPlaces = new Song("IknowPlaces", "sample", NineteenEightyNine);
         Song Clean = new Song("Clean", "sample", NineteenEightyNine);
+      
+       Song igorsTheme = new Song("Igor's Theme", "sample", igor);
+        Song earfquake = new Song("Earfquake", "sample", igor);
+        Song iThink = new Song("I Think", "sample", igor);
+        Song runningOutOfTime = new Song("Running Out Of Time", "sample", album1);
+        Song newMagicWand = new Song("New Magic Wand", "sample", igor);
+        Song ABoyIsAGun = new Song("A Boy Is A Gun", "sample", igor);
+        Song puppet = new Song("Puppet", "sample", igor);
+        Song whatsGood = new Song("What's Good", "sample", igor);
+        Song goneGoneThankYou = new Song("Gone, Gone/Thank You", "sample", igor);
+        Song iDontLoveYouAnymore = new Song("I Don't Love You Anymore", "sample", igor);
+        Song areWeStillFriends = new Song("Are We Still Friends", "sample", igor);
 
         // adding Repos ----------------//
         // adding Repos ----------------//
@@ -98,6 +112,18 @@ public class Populator implements CommandLineRunner {
         frayedEnds.addArtist(Metallica);
         toLiveIsToDie.addArtist(Metallica);
         dyersEve.addArtist(Metallica);
+      
+       igorsTheme.addArtist(igor);
+        earfquake.addArtist(igor);
+        iThink.addArtist(igor);
+        runningOutOfTime.addArtist(igor);
+        newMagicWand.addArtist(igor);
+        ABoyIsAGun.addArtist(igor);
+        puppet.addArtist(igor);
+        whatsGood.addArtist(igor);
+        goneGoneThankYou.addArtist(igor);
+        iDontLoveYouAnymore.addArtist(igor);
+        areWeStillFriends.addArtist(igor);
 
         songRepository.save(blackened);
         songRepository.save(andJusticeForAll);
@@ -108,6 +134,31 @@ public class Populator implements CommandLineRunner {
         songRepository.save(frayedEnds);
         songRepository.save(toLiveIsToDie);
         songRepository.save(dyersEve);
+      
+      
+
+        
+       
+       
+
+        albumRepository.save(igor);
+
+        artist1.addAlbum(igor);
+        artistRepository.save(tylerTheCreator);
+
+       
+        songRepository.save(igorsTheme);
+        songRepository.save(earfquake);
+        songRepository.save(iThink);
+        songRepository.save(runningOutOfTime);
+        songRepository.save(newMagicWand);
+        songRepository.save(ABoyIsAGun);
+        songRepository.save(puppet);
+        songRepository.save(whatsGood);
+        songRepository.save(goneGoneThankYou);
+        songRepository.save(iDontLoveYouAnymore);
+        songRepository.save(areWeStillFriends);
+
         songRepository.save(WelcomeToNewYork);
         songRepository.save(BlankSpace);
         songRepository.save(Style);
@@ -121,5 +172,7 @@ public class Populator implements CommandLineRunner {
         songRepository.save(ThisLove);
         songRepository.save(IknowPlaces);
         songRepository.save(Clean);
+      
     }
+
 }
