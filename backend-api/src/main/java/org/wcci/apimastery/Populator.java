@@ -49,9 +49,6 @@ public class Populator implements CommandLineRunner {
         Song toLiveIsToDie = new Song("To Live Is to Die", "sample", AndJusticeForAll);
         Song dyersEve = new Song("Dyers Eve", "sample", AndJusticeForAll);
 
-
-        albumRepository.save(AndJusticeForAll);
-
         Metallica.addAlbum(AndJusticeForAll);
         artistRepository.save(Metallica);
 
@@ -73,9 +70,5 @@ public class Populator implements CommandLineRunner {
         songRepository.save(frayedEnds);
         songRepository.save(toLiveIsToDie);
         songRepository.save(dyersEve);
-
-
-
-
     }
 }
