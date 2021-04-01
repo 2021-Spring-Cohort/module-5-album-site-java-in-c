@@ -36,10 +36,55 @@ public class Populator implements CommandLineRunner {
         Song toLiveIsToDie = new Song("To Live Is to Die", "sample", album1);
         Song dyersEve = new Song("Dyers Eve", "sample", album1);
 
-        Album album2 = new Album ("1989","");
+        Album NinteenEightyNine  = new Album ("1989","");
+        Song WelcomeToNewYork = new Song("WelcomeToNewYork", "sample",NinteenEightyNine );
+        Song BlankSpace = new Song("BlankSpace", "sample", NinteenEightyNine);
+        Song Style = new Song("Style", "sample", NinteenEightyNine);
+        Song OutOfTheWoods = new Song("OutOfTheWoods", "sample", NinteenEightyNine);
+        Song AllYouHadToDoWasStay = new Song("AllYouHadToDoWasStay", "sample", NinteenEightyNine);
+        Song ShakeItOff = new Song("ShakeItOff", "sample", NinteenEightyNine);
+        Song IWishYouWould = new Song("IWishYouWould", "sample", NinteenEightyNine);
+        Song BadBlood = new Song("BadBlood", "sample", NinteenEightyNine);
+        Song WildestDreams = new Song("WildestDreams", "sample", NinteenEightyNine);
+        Song HowYouGetTheGirl = new Song("HowYouGetTheGirl", "sample", NinteenEightyNine);
+        Song ThisLove = new Song("ThisLove","sample", NinteenEightyNine);
+        Song IknowPlaces = new Song("IknowPlaces", "sample", NinteenEightyNine);
+        Song Clean = new Song("Clean", "sample", NinteenEightyNine);
+
+        Artist TylerSwift = new Artist("Tyler Swift");
+        albumRepository.save(NinteenEightyNine);
+        TylerSwift.addAlbum(NinteenEightyNine);
+
+        WelcomeToNewYork.addArtist(TylerSwift);
+        BlankSpace.addArtist(TylerSwift);
+        Style.addArtist(TylerSwift);
+        OutOfTheWoods.addArtist(TylerSwift);
+        AllYouHadToDoWasStay.addArtist(TylerSwift);
+        ShakeItOff.addArtist(TylerSwift);
+        IWishYouWould.addArtist(TylerSwift);
+        BadBlood.addArtist(TylerSwift);
+        WildestDreams.addArtist(TylerSwift);
+        HowYouGetTheGirl.addArtist(TylerSwift);
+        ThisLove.addArtist(TylerSwift);
+        IknowPlaces.addArtist(TylerSwift);
+        Clean.addArtist(TylerSwift);
+
+
+        songRepository.save(WelcomeToNewYork);
+        songRepository.save(BlankSpace);
+        songRepository.save(Style);
+        songRepository.save(OutOfTheWoods);
+        songRepository.save(AllYouHadToDoWasStay);
+        songRepository.save(ShakeItOff);
+        songRepository.save(IWishYouWould);
+        songRepository.save(BadBlood);
+        songRepository.save(WildestDreams);
+        songRepository.save(HowYouGetTheGirl);
+        songRepository.save(ThisLove);
+        songRepository.save(IknowPlaces);
+        songRepository.save(Clean);
 
         albumRepository.save(album1);
-
         artist1.addAlbum(album1);
         artistRepository.save(artist1);
 
@@ -52,6 +97,7 @@ public class Populator implements CommandLineRunner {
         frayedEnds.addArtist(artist1);
         toLiveIsToDie.addArtist(artist1);
         dyersEve.addArtist(artist1);
+
         songRepository.save(blackened);
         songRepository.save(andJusticeForAll);
         songRepository.save(eyeOfTheBeholder);
