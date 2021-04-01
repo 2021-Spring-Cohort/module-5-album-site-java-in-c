@@ -1,4 +1,4 @@
-
+let selectedAlbumJson = {};
 
 
 const updateSongList = function(album) {
@@ -23,6 +23,7 @@ const clearChildren = function(element) {
 
 const createSelectedAlbum = function(album) {
     let selectedAlbum = document.querySelector("._selectedAlbum");
+    selectedAlbumJson = album;
     clearChildren(selectedAlbum);
     let albumImage = document.createElement("img");
     albumImage.classList.add("_selectedAlbumImage");
@@ -31,5 +32,6 @@ const createSelectedAlbum = function(album) {
 
 }
 
-
+export {selectedAlbumJson}
 export {updateSongList}
+export {clearChildren}
