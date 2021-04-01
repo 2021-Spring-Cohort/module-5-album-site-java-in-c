@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+._headerTitle h1 {
+  font-size: 50px;
+}
+
+._headerSearch {
+  padding: 20px;
+  width: 70%;
+}
+
+._headerSearch ._search {
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+._headerMenu {
+  padding: 20px;
+  transition-delay: 1s;
+}
+
+._headerMenu :hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+._headerMenu img {
+  height: 40px;
+}
+
+main {
+  background-color: azure;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main ._songs {
+  background-color: #c7c9c6;
+  grid-row: 1 / 5;
+  grid-column: 1 / 3;
+}
+
+main ._songs ._songContainer {
+  height: 100%;
+}
+
+main ._songs ._songContainer ._songHeader {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #444343, #302f2f, gray);
+}
+
+main ._songs ._songContainer ._songHeader ._headerSkip {
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+main ._songs ._songContainer ._songHeader ._headerSkip:hover {
+  transform: scale(1.02);
+}
+
+main ._songs ._songContainer ._mainSongContent {
+  height: 75%;
+  background-color: #b8b8b8;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songNav {
+  height: 10%;
+  background-color: indianred;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a8a92;
+  transition: 1s;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists:hover {
+  background-color: lightcyan;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: flex-start;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._singleSong {
+  height: 25px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._singleSong:hover {
+  background-color: #aeaeb1;
+}
+
+main ._albums {
+  background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
+  grid-row: 1 / 5;
+  grid-column: 3 / 6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+main ._albums::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._albums::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._albums::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+main ._albums ._albumStorage {
+  height: auto;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main ._albums ._albumStorage ._singleAlbum {
+  height: 150px;
+  background-image: url("/src/images/metallica.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  margin: 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main ._albums ._albumStorage ._singleAlbum:hover {
+  background-color: #a4a4cc;
+  transform: scale(1.05);
+}
+
+footer ._footerLine {
+  width: 1000px;
+}
+
+footer ._playImage {
+  height: 40px;
+  width: 40px;
+}
+
+._selectedAlbumImage {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */

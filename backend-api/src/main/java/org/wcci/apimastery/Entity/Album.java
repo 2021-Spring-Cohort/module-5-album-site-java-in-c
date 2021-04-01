@@ -43,6 +43,7 @@ public class Album {
         return name;
     }
 
+
     public String getAlbumCoverUrl() {
         return albumCoverUrl;
     }
