@@ -23,35 +23,44 @@ public class Populator implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        // Albums ----------------//
+        // Albums ----------------//
+        // Albums ----------------//
+        Album EmergencyTsunami = new Album("Emergency Tsunami", "/src/images/metallica.jpg");
+        Album AndJusticeForAll = new Album("...And Justice For All", "/src/images/metallica.jpg");
+        // Artists ----------------//
+        // Artists ----------------//
+        // Artists ----------------//
+        Artist Metallica = new Artist("Metallica");
+        Artist Nav = new Artist("Nav");
+        // Songs ----------------//
+        // Songs ----------------//
+        // Songs ----------------//
+        Song YoungWheezy = new Song("Young Wheezy", "young wheezy young wheezy", EmergencyTsunami);
+        Song Repercussions = new Song("Repercussions", "young wheezy young wheezy", EmergencyTsunami);
+        Song VetementSocks = new Song("Vetement Socks", "young wheezy young wheezy", EmergencyTsunami);
+        Song blackened = new Song("Blackened", "sample", AndJusticeForAll);
+        Song andJusticeForAll = new Song("...And Justice For All", "sample", AndJusticeForAll);
+        Song eyeOfTheBeholder = new Song("Eye of the Beholder", "sample", AndJusticeForAll);
+        Song one = new Song("One", "sample", AndJusticeForAll);
+        Song theShortestStraw = new Song("The Shortest Straw", "sample", AndJusticeForAll);
+        Song harvesterOfSorrow = new Song("Harvester of Sorrow", "sample", AndJusticeForAll);
+        Song frayedEnds = new Song("The Frayed Ends of Sanity", "sample", AndJusticeForAll);
+        Song toLiveIsToDie = new Song("To Live Is to Die", "sample", AndJusticeForAll);
+        Song dyersEve = new Song("Dyers Eve", "sample", AndJusticeForAll);
 
-        Album album1 = new Album("...And Justice For All", "/src/images/metallica.jpg");
-        Song blackened = new Song("Blackened", "sample", album1);
-        Artist artist1 = new Artist("Metallica");
-        Song andJusticeForAll = new Song("...And Justice For All", "sample", album1);
-        Song eyeOfTheBeholder = new Song("Eye of the Beholder", "sample", album1);
-        Song one = new Song("One", "sample", album1);
-        Song theShortestStraw = new Song("The Shortest Straw", "sample", album1);
-        Song harvesterOfSorrow = new Song("Harvester of Sorrow", "sample", album1);
-        Song frayedEnds = new Song("The Frayed Ends of Sanity", "sample", album1);
-        Song toLiveIsToDie = new Song("To Live Is to Die", "sample", album1);
-        Song dyersEve = new Song("Dyers Eve", "sample", album1);
-// test
+        Metallica.addAlbum(AndJusticeForAll);
+        artistRepository.save(Metallica);
 
-
-        albumRepository.save(album1);
-
-        artist1.addAlbum(album1);
-        artistRepository.save(artist1);
-
-        andJusticeForAll.addArtist(artist1);
-        blackened.addArtist(artist1);
-        eyeOfTheBeholder.addArtist(artist1);
-        one.addArtist(artist1);
-        theShortestStraw.addArtist(artist1);
-        harvesterOfSorrow.addArtist(artist1);
-        frayedEnds.addArtist(artist1);
-        toLiveIsToDie.addArtist(artist1);
-        dyersEve.addArtist(artist1);
+        andJusticeForAll.addArtist(Metallica);
+        blackened.addArtist(Metallica);
+        eyeOfTheBeholder.addArtist(Metallica);
+        one.addArtist(Metallica);
+        theShortestStraw.addArtist(Metallica);
+        harvesterOfSorrow.addArtist(Metallica);
+        frayedEnds.addArtist(Metallica);
+        toLiveIsToDie.addArtist(Metallica);
+        dyersEve.addArtist(Metallica);
         songRepository.save(blackened);
         songRepository.save(andJusticeForAll);
         songRepository.save(eyeOfTheBeholder);
