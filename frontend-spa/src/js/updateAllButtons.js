@@ -11,8 +11,6 @@ const updateAllButtons = function() {
     playlistButton.addEventListener("click", () => clickOnPlaylistButton());
     commentButton.addEventListener("click", () => clickOnCommentButton());
 
-
-
 };
 
 const clickOnSongButton = function() {
@@ -29,6 +27,16 @@ const clickOnPlaylistButton = function() {
 const clickOnCommentButton = function() {
     let songList = document.querySelector("._songList");
     clearChildren(songList);
+    selectedAlbumJson.comments.forEach(comment => {
+        let commentName = document.createElement("h3");
+        commentName.classList.add("_commentName");
+        commentName.innerText = comment.name;
+        songList.appendChild(commentName);
+        let commentBody = document.createElement("p");
+        commentBody.classList.add("_commentBody");
+        commentBody.innerText = comment.body;
+        songList.appendChild(commentBody);
+    });
 }
 
 
