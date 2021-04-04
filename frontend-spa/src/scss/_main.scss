@@ -13,12 +13,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(
-          to top left,
-          rgb(68, 67, 67),
-          rgb(48, 47, 47),
-          gray
-        );
+        background: linear-gradient(to right, rgb(37, 37, 37), black, rgb(48, 48, 48));
         ._headerSkip {
           font-size: 50px;
           cursor: pointer;
@@ -30,7 +25,7 @@ main {
       }
       ._mainSongContent {
         height: 75%;
-        background-color: rgb(184, 184, 184);
+        background: linear-gradient(to bottom right, rgb(155, 155, 155), rgb(145, 145, 145), gray);
 
         ._songNav {
           height: 10%;
@@ -45,10 +40,10 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(138, 138, 146);
+            background-color: rgb(97, 97, 97);
             transition: 1s;
             &:hover {
-              background-color: lightcyan;
+              background-color: rgb(143, 141, 141);
             }
           }
         }
@@ -97,6 +92,173 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: scroll;
+    ._popUpPages {
+      background-color: aquamarine;
+      height: 100%;
+      width: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      ._popUpPagesContainer {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
+        ._popUpPagesHeader {
+          background-color: beige;
+          height: 10%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          ._loginTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._submitTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._contactTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._learnTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          
+        }
+        ._popUpPagesMain {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+          width: 100%;
+          background: linear-gradient(to top right, rgb(63, 113, 153), rgb(83, 120, 151), rgb(103, 137, 143));
+          ._loginTabContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            ._loginForm {
+              height: 90%;
+              width: 50%;
+              background-color: grey;
+              border-radius: 10px;
+              box-shadow: 5px 5px 10px black;
+              overflow: hidden;
+              ._loginFormHeader {
+                height: 10%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                ._loginFormSignIn {
+                  cursor: pointer;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &:hover {
+                    background-color: rgb(168, 168, 168);
+                  }
+                }
+                ._loginFormSignUp {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  height: 100%;
+                  width: 100%;
+                  &:hover {
+                    background-color: rgb(168, 168, 168);
+                  }
+                }
+              }
+              ._loginFormMain {
+                height: 80%;
+                background-color: rgb(13, 197, 179);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ._signUp {
+                  display: none;
+                }
+              }
+              ._loginFormFooter {
+                height: 10%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+          ._sumbitTabContent {
+            display: none;
+          }
+          ._contactTabContent {
+            display: none;
+          }
+          ._learnTabContent {
+            display: none;
+          }
+        }
+        ._popUpPagesFooter {
+          height: 10%;
+          width: 100%;
+          background-color: beige;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          ._goBack {
+            margin-left: 1%;
+            font-size: 1.2em;
+            cursor: pointer;
+            &:hover {
+              color: rgb(122, 122, 122);
+            }
+          }
+        }
+      }
+    }
     &::-webkit-scrollbar {
       width: 5px;
     }

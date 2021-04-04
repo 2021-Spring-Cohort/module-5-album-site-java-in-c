@@ -12,6 +12,7 @@ body {
 
 ._headerTitle h1 {
   font-size: 50px;
+  color: white;
 }
 
 ._headerSearch {
@@ -63,7 +64,7 @@ main ._songs ._songContainer ._songHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top left, #444343, #302f2f, gray);
+  background: linear-gradient(to right, #252525, black, #303030);
 }
 
 main ._songs ._songContainer ._songHeader ._headerSkip {
@@ -78,7 +79,7 @@ main ._songs ._songContainer ._songHeader ._headerSkip:hover {
 
 main ._songs ._songContainer ._mainSongContent {
   height: 75%;
-  background-color: #b8b8b8;
+  background: linear-gradient(to bottom right, #9b9b9b, #919191, gray);
 }
 
 main ._songs ._songContainer ._mainSongContent ._songNav {
@@ -96,12 +97,12 @@ main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8a8a92;
+  background-color: #616161;
   transition: 1s;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songNav ._navBarSongLists:hover {
-  background-color: lightcyan;
+  background-color: #8f8d8d;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList {
@@ -149,6 +150,200 @@ main ._albums {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+}
+
+main ._albums ._popUpPages {
+  background-color: aquamarine;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top right, #657b8d, #496891, #757f83);
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader {
+  background-color: beige;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._loginTab {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._loginTab:hover {
+  background-color: #b3b3b3;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._submitTab {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._submitTab:hover {
+  background-color: #b3b3b3;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._contactTab {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._contactTab:hover {
+  background-color: #b3b3b3;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._learnTab {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader ._learnTab:hover {
+  background-color: #b3b3b3;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  background: linear-gradient(to top right, #3f7199, #537897, #67898f);
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm {
+  height: 90%;
+  width: 50%;
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormHeader {
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormHeader ._loginFormSignIn {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormHeader ._loginFormSignIn:hover {
+  background-color: #a8a8a8;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormHeader ._loginFormSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormHeader ._loginFormSignUp:hover {
+  background-color: #a8a8a8;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain {
+  height: 80%;
+  background-color: #0dc5b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp {
+  display: none;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormFooter {
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._sumbitTabContent {
+  display: none;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._contactTabContent {
+  display: none;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._learnTabContent {
+  display: none;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter {
+  height: 10%;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter ._goBack {
+  margin-left: 1%;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter ._goBack:hover {
+  color: #7a7a7a;
 }
 
 main ._albums::-webkit-scrollbar {
