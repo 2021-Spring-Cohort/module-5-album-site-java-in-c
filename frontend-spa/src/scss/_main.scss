@@ -102,9 +102,9 @@ main {
       ._popUpPagesContainer {
         height: 100%;
         width: 100%;
-        background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
+        background: linear-gradient(to right, rgb(101, 123, 141), rgb(63, 62, 62));
         ._popUpPagesHeader {
-          background-color: beige;
+          background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
           height: 10%;
           width: 100%;
           display: flex;
@@ -167,7 +167,33 @@ main {
           align-items: center;
           height: 80%;
           width: 100%;
-          background: linear-gradient(to top right, rgb(63, 113, 153), rgb(83, 120, 151), rgb(103, 137, 143));
+          background-color: beige;
+          ._submitTabContent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ._submitTabContainer {
+              height: 100%;
+              width: 100%;
+              background-color: rgb(255, 255, 255);
+              ._submitTabContentHeader {
+                height: 20%;
+                width: 100%;
+              }
+              ._submitTabContentMain {
+                height: 70%;
+                width: 100%;
+                background-color: blueviolet;
+              }
+              ._submitTabContentFooter {
+                height: 10%;
+                width: 100%;
+              }
+            }
+          }
+        
           ._loginTabContent {
             display: flex;
             flex-direction: column;
@@ -214,7 +240,7 @@ main {
               }
               ._loginFormMain {
                 height: 80%;
-                background-color: rgb(13, 197, 179);
+                background: linear-gradient(to top right, rgb(56, 78, 97), rgb(73, 145, 133), rgb(55, 89, 102));
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -231,9 +257,7 @@ main {
               }
             }
           }
-          ._sumbitTabContent {
-            display: none;
-          }
+          
           ._contactTabContent {
             display: none;
           }
@@ -244,7 +268,7 @@ main {
         ._popUpPagesFooter {
           height: 10%;
           width: 100%;
-          background-color: beige;
+          background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
           display: flex;
           justify-content: flex-start;
           align-items: center;
@@ -295,3 +319,8 @@ main {
     }
   }
 }
+// ._submitTabContent {
+//   border: 1px solid black;
+//   height: 100%;
+//   width: 100%;
+// }

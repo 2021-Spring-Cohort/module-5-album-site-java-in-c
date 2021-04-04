@@ -164,11 +164,11 @@ main ._albums ._popUpPages {
 main ._albums ._popUpPages ._popUpPagesContainer {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to top right, #657b8d, #496891, #757f83);
+  background: linear-gradient(to right, #657b8d, #3f3e3e);
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesHeader {
-  background-color: beige;
+  background: linear-gradient(to top right, #657b8d, #496891, #757f83);
   height: 10%;
   width: 100%;
   display: flex;
@@ -239,7 +239,37 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain {
   align-items: center;
   height: 80%;
   width: 100%;
-  background: linear-gradient(to top right, #3f7199, #537897, #67898f);
+  background-color: beige;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentHeader {
+  height: 20%;
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain {
+  height: 70%;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentFooter {
+  height: 10%;
+  width: 100%;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent {
@@ -297,7 +327,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabCont
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain {
   height: 80%;
-  background-color: #0dc5b3;
+  background: linear-gradient(to top right, #384e61, #499185, #375966);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,10 +345,6 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabCont
   align-items: center;
 }
 
-main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._sumbitTabContent {
-  display: none;
-}
-
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._contactTabContent {
   display: none;
 }
@@ -330,7 +356,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._learnTabCont
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter {
   height: 10%;
   width: 100%;
-  background-color: beige;
+  background: linear-gradient(to top right, #657b8d, #496891, #757f83);
   display: flex;
   justify-content: flex-start;
   align-items: center;

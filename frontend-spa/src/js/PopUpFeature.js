@@ -7,7 +7,23 @@ const signInTab = document.querySelector("._loginFormSignIn");
 const signUpTab = document.querySelector("._loginFormSignUp");
 const signInContent = document.querySelector("._signIn");
 const signUpContent = document.querySelector("._signUp");
+const loginTabContent = document.querySelector("._loginTabContent");
+const submitTabContent = document.querySelector("._submitTabContent");
+const submitTab = document.querySelector("._submitTab");
+const accountTab = document.querySelector("._loginTab");
 
+const showAccountTab = () => {
+    accountTab.addEventListener("click", () => {
+        submitTabContent.style.display = "none";
+        loginTabContent.style.display = "flex";
+    });
+}
+const changeToSubmitForm = () => {
+    submitTab.addEventListener("click", () => {
+        loginTabContent.style.display = "none";
+        submitTabContent.style.display = "flex";
+    });
+}
 
 //switch signin and signup tabs
 const switchFromSignInTabToSignUpTab = () => {
@@ -30,12 +46,15 @@ const showLoginPage = () => {
     let flag = true;
     pianoButton.addEventListener("click", ()=> {
         if(flag) {
+            submitTabContent.style.display = "none";
             loginPage.style.display = "flex";
             albumPage.style.display = "none";
+            loginTabContent.style.display = "flex";
             flag = false;
         } else {
             loginPage.style.display = "none";
             albumPage.style.display = "flex";
+            loginTabContent.style.display = "none";
             flag = true;
         }
     
@@ -45,8 +64,12 @@ const shouldGoBack = () => {
     goBackButton.addEventListener("click", () => {
         loginPage.style.display = "none";
             albumPage.style.display = "flex";
+            submitTabContent.style.display = "none";
+            loginTabContent.style.display = "none";
     });
 }
+showAccountTab();
+changeToSubmitForm();
 switchFromSignInTabToSignUpTab();
 switchFromSignUpTabToSignInTab();
 shouldGoBack();
