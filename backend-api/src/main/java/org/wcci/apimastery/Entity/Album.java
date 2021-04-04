@@ -13,6 +13,8 @@ public class Album {
     private long id;
     private String name;
     private String albumCoverUrl;
+    private String recordLabel;
+    private int rating;
     @OneToMany(mappedBy = "album")
     private Collection<Song> songs;
     @ManyToMany(mappedBy = "albums")
@@ -21,8 +23,10 @@ public class Album {
     private Collection<Comment> comments;
 
 
-    public Album(String name, String albumCoverUrl) {
+    public Album(String name, String albumCoverUrl, String recordLabel, int rating) {
         this.name = name;
+        this.recordLabel = recordLabel;
+        this.rating = rating;
         this.albumCoverUrl = albumCoverUrl;
         this.songs = new ArrayList<>();
         this.artists = new ArrayList<>();
@@ -54,6 +58,14 @@ public class Album {
 
     public Collection<Artist> getArtists() {
         return artists;
+    }
+
+    public String getRecordLabel() {
+        return recordLabel;
+    }
+
+    public int getRating() {
+        return rating;
     }
 
     public Collection<Comment> getComments() {

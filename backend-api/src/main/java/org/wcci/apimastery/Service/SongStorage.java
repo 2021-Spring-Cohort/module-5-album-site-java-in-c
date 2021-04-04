@@ -1,8 +1,9 @@
 package org.wcci.apimastery.Service;
 
+import org.springframework.stereotype.Service;
 import org.wcci.apimastery.Entity.Song;
 
-
+@Service
 public class SongStorage {
     private SongRepository songRepository;
 
