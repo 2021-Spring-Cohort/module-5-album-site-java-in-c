@@ -14,10 +14,10 @@ main {
         justify-content: center;
         align-items: center;
         background: linear-gradient(
-          to top left,
-          rgb(68, 67, 67),
-          rgb(48, 47, 47),
-          gray
+          to right,
+          rgb(37, 37, 37),
+          black,
+          rgb(48, 48, 48)
         );
         ._headerSkip {
           font-size: 50px;
@@ -30,7 +30,12 @@ main {
       }
       ._mainSongContent {
         height: 75%;
-        background-color: rgb(184, 184, 184);
+        background: linear-gradient(
+          to bottom right,
+          rgb(155, 155, 155),
+          rgb(145, 145, 145),
+          gray
+        );
 
         ._songNav {
           height: 10%;
@@ -45,10 +50,10 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(138, 138, 146);
+            background-color: rgb(97, 97, 97);
             transition: 1s;
             &:hover {
-              background-color: lightcyan;
+              background-color: rgb(143, 141, 141);
             }
           }
         }
@@ -97,6 +102,425 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: scroll;
+    ._popUpPages {
+      background-color: aquamarine;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ._popUpPagesContainer {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          to right,
+          rgb(101, 123, 141),
+          rgb(63, 62, 62)
+        );
+        ._popUpPagesHeader {
+          background: linear-gradient(
+            to top right,
+            rgb(101, 123, 141),
+            rgb(73, 104, 145),
+            rgb(117, 127, 131)
+          );
+          height: 10%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          ._loginTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._submitTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._contactTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+          ._learnTab {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            &:hover {
+              background-color: rgb(179, 179, 179);
+            }
+          }
+        }
+        ._popUpPagesMain {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+          width: 100%;
+          background-color: beige;
+          //  -----------------Submit You Own ----------------
+          //  -----------------Submit You Own ----------------
+          ._submitTabContent {
+            height: 100%;
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            ._submitTabContainer {
+              height: 100%;
+              width: 100%;
+              background-color: rgb(255, 255, 255);
+              ._submitTabContentHeader {
+                height: 20%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: whitesmoke;
+                p {
+                  font-size: 2em;
+                }
+              }
+              ._submitTabContentMain {
+                height: 80%;
+                width: 100%;
+                background-color: blueviolet;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                overflow: hidden;
+                ._addAlbumForm {
+                  background-color: rgb(206, 42, 42);
+                  height: 100%;
+                  width: 100%;
+                  ._submitAlbumButton {
+                    border: none;
+                    padding: 10px;
+                    background-color: rgb(92, 138, 199);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    width: 100px;
+                    &:hover {
+                      background-color: rgb(79, 117, 167);
+                    }
+                  }
+
+                  ._actualAddAlbumForm {
+                    background-color: white;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ._formForAlbum {
+                      width: 75%;
+                      font-weight: 900;
+                      height: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: space-evenly;
+                      ._albumNameDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._albumArtistDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._albumRatingDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                    }
+                  }
+
+                  ._addAlbumsFormHeading {
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: whitesmoke;
+                    border-right: 1px solid gray;
+                    border-top: 1px solid gray;
+                  }
+                }
+                ._addSongForm {
+                  background-color: white;
+                  height: 100%;
+                  width: 100%;
+                  ._submitSongButton {
+                    border: none;
+                    padding: 10px;
+                    background-color: rgb(92, 138, 199);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    width: 100px;
+                    &:hover {
+                      background-color: rgb(79, 117, 167);
+                    }
+                  }
+                  ._actualAddSongForm {
+                    background-color: white;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ._formForSong {
+                      width: 75%;
+                      font-weight: 900;
+                      height: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: space-evenly;
+                      ._songNameDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._songArtistDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._songRatingDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                    }
+                  }
+                  ._addSongsFormHeading {
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: whitesmoke;
+                    border-top: 1px solid gray;
+                  }
+                }
+              }
+            }
+          }
+          //  -----------------Account tab ----------------
+          //  -----------------Account tab ----------------
+          ._loginTabContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+            ._loginForm {
+              height: 90%;
+              width: 50%;
+              background-color: grey;
+              border-radius: 10px;
+              box-shadow: 5px 5px 10px black;
+              overflow: hidden;
+              ._loginFormHeader {
+                height: 10%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                ._loginFormSignIn {
+                  cursor: pointer;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &:hover {
+                    background-color: rgb(168, 168, 168);
+                  }
+                }
+                ._loginFormSignUp {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  height: 100%;
+                  width: 100%;
+                  &:hover {
+                    background-color: rgb(168, 168, 168);
+                  }
+                }
+              }
+              ._loginFormMain {
+                height: 80%;
+                background: linear-gradient(
+                  to top right,
+                  rgb(56, 78, 97),
+                  rgb(73, 145, 133),
+                  rgb(55, 89, 102)
+                );
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ._signIn {
+                  display: flex;
+                  height: 75%;
+                  justify-content: center;
+                  align-items: center;
+                  width: 60%;
+                  ._signInForm {
+                    font-weight: 900;
+                    width: 100%;
+                    ._signInButton {
+                      border: none;
+                      padding: 5px;
+                      background-color: rgb(173, 173, 173);
+                      border-radius: 5px;
+                      cursor: pointer;
+                      font-weight: 500;
+                      width: 100px;
+                      &:hover {
+                        background-color: rgb(158, 158, 158);
+                      }
+                    }
+
+                    ._signInFormInput {
+                      width: 100%;
+                      padding: 5px;
+                      font-size: 1em;
+                      margin-bottom: 5%;
+                      border: none;
+                    }
+                  }
+                }
+                ._signUp {
+                  display: none;
+                  height: 75%;
+                  justify-content: center;
+                  align-items: center;
+                  width: 60%;
+                  ._signUpForm {
+                    font-weight: 900;
+                    width: 100%;
+                    ._signUpFormInput {
+                      width: 100%;
+                      padding: 5px;
+                      font-size: 1em;
+                      margin-bottom: 5%;
+                      border: none;
+                    }
+                    ._signUpButton {
+                      border: none;
+                      padding: 5px;
+                      background-color: rgb(173, 173, 173);
+                      border-radius: 5px;
+                      cursor: pointer;
+                      font-weight: 500;
+                      width: 100px;
+                      &:hover {
+                        background-color: rgb(158, 158, 158);
+                      }
+                    }
+                  }
+                }
+              }
+              ._loginFormFooter {
+                height: 10%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+
+          ._contactTabContent {
+            display: none;
+          }
+          ._learnTabContent {
+            display: none;
+          }
+        }
+        ._popUpPagesFooter {
+          height: 10%;
+          width: 100%;
+          background: linear-gradient(
+            to top right,
+            rgb(101, 123, 141),
+            rgb(73, 104, 145),
+            rgb(117, 127, 131)
+          );
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          ._goBack {
+            font-weight: 200;
+            margin-left: 1%;
+            font-size: 1.1em;
+            cursor: pointer;
+            &:hover {
+              color: rgb(122, 122, 122);
+            }
+          }
+        }
+      }
+    }
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -133,3 +557,8 @@ main {
     }
   }
 }
+// ._submitTabContent {
+//   border: 1px solid black;
+//   height: 100%;
+//   width: 100%;
+// }
