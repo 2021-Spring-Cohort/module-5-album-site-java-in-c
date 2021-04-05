@@ -1,7 +1,10 @@
-import { staticJson } from "./staticJson.js";
+// import { staticJson } from "./staticJson.js";
 import { updateSongList } from "./updateSongs.js"
 
 let albumStorage = document.querySelector("._albumStorage");
+
+
+
 
 const createImageElement = function(album) {
     let imgElement = document.createElement("img");
@@ -9,9 +12,11 @@ const createImageElement = function(album) {
     imgElement.src = album.albumCoverUrl;
     imgElement.addEventListener("click", () => updateSongList(album));
     albumStorage.appendChild(imgElement);
-
 }
-const addAlbumsToPage = function() {
+
+
+
+const addAlbumsToPage = function(staticJson) {
     staticJson.forEach(album => {
         createImageElement(album);
     });
