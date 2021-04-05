@@ -106,7 +106,7 @@ main {
       background-color: aquamarine;
       height: 100%;
       width: 100%;
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       ._popUpPagesContainer {
@@ -221,6 +221,18 @@ main {
                   background-color: rgb(206, 42, 42);
                   height: 100%;
                   width: 100%;
+                  ._submitAlbumButton {
+                    border: none;
+                    padding: 10px;
+                    background-color: rgb(92, 138, 199);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    width: 100px;
+                    &:hover {
+                      background-color: rgb(79, 117, 167);
+                    }
+                  }
 
                   ._actualAddAlbumForm {
                     background-color: white;
@@ -228,8 +240,41 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    ._form {
-                      border: 1px solid black;
+                    ._formForAlbum {
+                      width: 75%;
+                      font-weight: 900;
+                      height: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: space-evenly;
+                      ._albumNameDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._albumArtistDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._albumRatingDiv {
+                        width: 100%;
+                        ._albumInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
                     }
                   }
 
@@ -248,6 +293,61 @@ main {
                   background-color: white;
                   height: 100%;
                   width: 100%;
+                  ._submitSongButton {
+                    border: none;
+                    padding: 10px;
+                    background-color: rgb(92, 138, 199);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    width: 100px;
+                    &:hover {
+                      background-color: rgb(79, 117, 167);
+                    }
+                  }
+                  ._actualAddSongForm {
+                    background-color: white;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ._formForSong {
+                      width: 75%;
+                      font-weight: 900;
+                      height: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: space-evenly;
+                      ._songNameDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._songArtistDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                      ._songRatingDiv {
+                        width: 100%;
+                        ._songInputs {
+                          width: 100%;
+                          height: 30px;
+                          padding: 5px;
+                          font-size: 1.1em;
+                        }
+                      }
+                    }
+                  }
                   ._addSongsFormHeading {
                     height: 20%;
                     display: flex;
@@ -264,7 +364,7 @@ main {
           //  -----------------Account tab ----------------
           //  -----------------Account tab ----------------
           ._loginTabContent {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -352,8 +452,9 @@ main {
           justify-content: flex-start;
           align-items: center;
           ._goBack {
+            font-weight: 200;
             margin-left: 1%;
-            font-size: 1.2em;
+            font-size: 1.1em;
             cursor: pointer;
             &:hover {
               color: rgb(122, 122, 122);

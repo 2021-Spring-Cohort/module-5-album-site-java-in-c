@@ -165,7 +165,7 @@ main ._albums ._popUpPages {
   background-color: aquamarine;
   height: 100%;
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -294,6 +294,20 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
   width: 100%;
 }
 
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._submitAlbumButton {
+  border: none;
+  padding: 10px;
+  background-color: #5c8ac7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._submitAlbumButton:hover {
+  background-color: #4f75a7;
+}
+
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm {
   background-color: white;
   height: 80%;
@@ -302,8 +316,47 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
   align-items: center;
 }
 
-main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._form {
-  border: 1px solid black;
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum {
+  width: 75%;
+  font-weight: 900;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumNameDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumNameDiv ._albumInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumArtistDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumArtistDiv ._albumInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumRatingDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumRatingDiv ._albumInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._addAlbumsFormHeading {
@@ -323,6 +376,71 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
   width: 100%;
 }
 
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._submitSongButton {
+  border: none;
+  padding: 10px;
+  background-color: #5c8ac7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._submitSongButton:hover {
+  background-color: #4f75a7;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm {
+  background-color: white;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong {
+  width: 75%;
+  font-weight: 900;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songNameDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songNameDiv ._songInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songArtistDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songArtistDiv ._songInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songRatingDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songRatingDiv ._songInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._addSongsFormHeading {
   height: 20%;
   display: flex;
@@ -334,7 +452,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -424,8 +542,9 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter {
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesFooter ._goBack {
+  font-weight: 200;
   margin-left: 1%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   cursor: pointer;
 }
 
