@@ -11,8 +11,9 @@ public class MainController {
     private AlbumStorage albumStorage;
     private SongStorage songStorage;
 
-    public MainController(AlbumStorage albumStorage) {
+    public MainController(AlbumStorage albumStorage, SongStorage songStorage) {
         this.albumStorage = albumStorage;
+        this.songStorage =  songStorage;
     }
 
     @GetMapping("/api/albums")
@@ -27,9 +28,11 @@ public class MainController {
     public void addAlbum(@RequestBody Album album){
         albumStorage.saveAlbum(album);
     }
-    @PostMapping("/api/songs")
-    public void addSong(@RequestBody Song song){
-        songStorage.saveSong(song);
+    @PatchMapping("/api/albums/{id}/songs")
+    public void addSong(@RequestBody Song song, @PathVariable long id){
+        Album album = albumStorage.retrieveAlbumById(id);
+        Song songToAdd = new Song(song.getName(), song.getLyrics(), album, song.getRating(), song.getDuration());
+        songStorage.saveSong(songToAdd);
     }
     @DeleteMapping("/api/songs/{id}")
     public void deleteSong(@PathVariable long id){
@@ -41,5 +44,4 @@ public class MainController {
             albumStorage.saveAlbum(album);
         }
     }
-
 }
