@@ -13,7 +13,12 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(to right, rgb(37, 37, 37), black, rgb(48, 48, 48));
+        background: linear-gradient(
+          to right,
+          rgb(37, 37, 37),
+          black,
+          rgb(48, 48, 48)
+        );
         ._headerSkip {
           font-size: 50px;
           cursor: pointer;
@@ -25,7 +30,12 @@ main {
       }
       ._mainSongContent {
         height: 75%;
-        background: linear-gradient(to bottom right, rgb(155, 155, 155), rgb(145, 145, 145), gray);
+        background: linear-gradient(
+          to bottom right,
+          rgb(155, 155, 155),
+          rgb(145, 145, 145),
+          gray
+        );
 
         ._songNav {
           height: 10%;
@@ -102,9 +112,18 @@ main {
       ._popUpPagesContainer {
         height: 100%;
         width: 100%;
-        background: linear-gradient(to right, rgb(101, 123, 141), rgb(63, 62, 62));
+        background: linear-gradient(
+          to right,
+          rgb(101, 123, 141),
+          rgb(63, 62, 62)
+        );
         ._popUpPagesHeader {
-          background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
+          background: linear-gradient(
+            to top right,
+            rgb(101, 123, 141),
+            rgb(73, 104, 145),
+            rgb(117, 127, 131)
+          );
           height: 10%;
           width: 100%;
           display: flex;
@@ -158,7 +177,6 @@ main {
               background-color: rgb(179, 179, 179);
             }
           }
-          
         }
         ._popUpPagesMain {
           display: flex;
@@ -168,6 +186,8 @@ main {
           height: 80%;
           width: 100%;
           background-color: beige;
+          //  -----------------Submit You Own ----------------
+          //  -----------------Submit You Own ----------------
           ._submitTabContent {
             height: 100%;
             width: 100%;
@@ -181,19 +201,42 @@ main {
               ._submitTabContentHeader {
                 height: 20%;
                 width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                  font-size: 2em;
+                }
               }
               ._submitTabContentMain {
-                height: 70%;
+                height: 80%;
                 width: 100%;
                 background-color: blueviolet;
-              }
-              ._submitTabContentFooter {
-                height: 10%;
-                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                ._addAlbumForm {
+                  background-color: greenyellow;
+                  height: 100%;
+                  width: 100%;
+
+                  &:hover {
+                    background-color: honeydew;
+                  }
+                }
+                ._addSongForm {
+                  background-color: greenyellow;
+                  height: 100%;
+                  width: 100%;
+                  &:hover {
+                    background-color: honeydew;
+                  }
+                }
               }
             }
           }
-        
+          //  -----------------Account tab ----------------
+          //  -----------------Account tab ----------------
           ._loginTabContent {
             display: flex;
             flex-direction: column;
@@ -201,7 +244,7 @@ main {
             align-items: center;
             height: 100%;
             width: 100%;
-            background-color: transparent;
+            background-color: whitesmoke;
             ._loginForm {
               height: 90%;
               width: 50%;
@@ -240,7 +283,12 @@ main {
               }
               ._loginFormMain {
                 height: 80%;
-                background: linear-gradient(to top right, rgb(56, 78, 97), rgb(73, 145, 133), rgb(55, 89, 102));
+                background: linear-gradient(
+                  to top right,
+                  rgb(56, 78, 97),
+                  rgb(73, 145, 133),
+                  rgb(55, 89, 102)
+                );
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -257,7 +305,7 @@ main {
               }
             }
           }
-          
+
           ._contactTabContent {
             display: none;
           }
@@ -268,7 +316,12 @@ main {
         ._popUpPagesFooter {
           height: 10%;
           width: 100%;
-          background: linear-gradient(to top right, rgb(101, 123, 141), rgb(73, 104, 145), rgb(117, 127, 131));
+          background: linear-gradient(
+            to top right,
+            rgb(101, 123, 141),
+            rgb(73, 104, 145),
+            rgb(117, 127, 131)
+          );
           display: flex;
           justify-content: flex-start;
           align-items: center;

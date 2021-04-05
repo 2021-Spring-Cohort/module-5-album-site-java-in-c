@@ -12,6 +12,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h1 {
+  font-weight: 400;
+}
+p {
+  font-weight: 200;
 }
 @import "./header";
 @import "./main";

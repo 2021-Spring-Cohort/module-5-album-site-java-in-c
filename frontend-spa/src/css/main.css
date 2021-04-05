@@ -8,6 +8,15 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
 }
 
 ._headerTitle h1 {
@@ -259,17 +268,42 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentHeader {
   height: 20%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentHeader p {
+  font-size: 2em;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain {
-  height: 70%;
+  height: 80%;
   width: 100%;
   background-color: blueviolet;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentFooter {
-  height: 10%;
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm {
+  background-color: greenyellow;
+  height: 100%;
   width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm:hover {
+  background-color: honeydew;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm {
+  background-color: greenyellow;
+  height: 100%;
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm:hover {
+  background-color: honeydew;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent {
@@ -279,7 +313,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabCont
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: transparent;
+  background-color: whitesmoke;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm {
