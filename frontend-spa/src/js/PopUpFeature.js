@@ -12,6 +12,8 @@ const submitTabContent = document.querySelector("._submitTabContent");
 const submitTab = document.querySelector("._submitTab");
 const accountTab = document.querySelector("._loginTab");
 
+let flag = true;
+
 const showAccountTab = () => {
   accountTab.addEventListener("click", () => {
     submitTabContent.style.display = "none";
@@ -44,11 +46,11 @@ const shouldGoBack = () => {
     albumPage.style.display = "flex";
     submitTabContent.style.display = "none";
     loginTabContent.style.display = "none";
+    flag = true;
   });
 };
 // sets popup page on and off
 const showLoginPage = () => {
-  let flag = true;
   pianoButton.addEventListener("click", () => {
     if (flag) {
       submitTabContent.style.display = "none";
