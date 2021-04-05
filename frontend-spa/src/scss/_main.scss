@@ -191,7 +191,7 @@ main {
           ._submitTabContent {
             height: 100%;
             width: 100%;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             ._submitTabContainer {
@@ -364,7 +364,7 @@ main {
           //  -----------------Account tab ----------------
           //  -----------------Account tab ----------------
           ._loginTabContent {
-            display: none;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -418,8 +418,66 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                ._signIn {
+                  display: flex;
+                  height: 75%;
+                  justify-content: center;
+                  align-items: center;
+                  width: 60%;
+                  ._signInForm {
+                    font-weight: 900;
+                    width: 100%;
+                    ._signInButton {
+                      border: none;
+                      padding: 5px;
+                      background-color: rgb(173, 173, 173);
+                      border-radius: 5px;
+                      cursor: pointer;
+                      font-weight: 500;
+                      width: 100px;
+                      &:hover {
+                        background-color: rgb(158, 158, 158);
+                      }
+                    }
+
+                    ._signInFormInput {
+                      width: 100%;
+                      padding: 5px;
+                      font-size: 1em;
+                      margin-bottom: 5%;
+                      border: none;
+                    }
+                  }
+                }
                 ._signUp {
                   display: none;
+                  height: 75%;
+                  justify-content: center;
+                  align-items: center;
+                  width: 60%;
+                  ._signUpForm {
+                    font-weight: 900;
+                    width: 100%;
+                    ._signUpFormInput {
+                      width: 100%;
+                      padding: 5px;
+                      font-size: 1em;
+                      margin-bottom: 5%;
+                      border: none;
+                    }
+                    ._signUpButton {
+                      border: none;
+                      padding: 5px;
+                      background-color: rgb(173, 173, 173);
+                      border-radius: 5px;
+                      cursor: pointer;
+                      font-weight: 500;
+                      width: 100px;
+                      &:hover {
+                        background-color: rgb(158, 158, 158);
+                      }
+                    }
+                  }
                 }
               }
               ._loginFormFooter {

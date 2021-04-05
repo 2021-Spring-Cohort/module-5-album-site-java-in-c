@@ -254,7 +254,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain {
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent {
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -452,7 +452,7 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -512,8 +512,74 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabCont
   align-items: center;
 }
 
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signIn {
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signIn ._signInForm {
+  font-weight: 900;
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signIn ._signInForm ._signInButton {
+  border: none;
+  padding: 5px;
+  background-color: #adadad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signIn ._signInForm ._signInButton:hover {
+  background-color: #9e9e9e;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signIn ._signInForm ._signInFormInput {
+  width: 100%;
+  padding: 5px;
+  font-size: 1em;
+  margin-bottom: 5%;
+  border: none;
+}
+
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp {
   display: none;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp ._signUpForm {
+  font-weight: 900;
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp ._signUpForm ._signUpFormInput {
+  width: 100%;
+  padding: 5px;
+  font-size: 1em;
+  margin-bottom: 5%;
+  border: none;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp ._signUpForm ._signUpButton {
+  border: none;
+  padding: 5px;
+  background-color: #adadad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormMain ._signUp ._signUpForm ._signUpButton:hover {
+  background-color: #9e9e9e;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._loginTabContent ._loginForm ._loginFormFooter {
