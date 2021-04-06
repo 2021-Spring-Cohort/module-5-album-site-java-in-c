@@ -26,11 +26,17 @@ const clickOnPlaylistButton = function () {
 const clickOnCommentButton = function () {
   let songList = document.querySelector("._songList");
   clearChildren(songList);
-  //   let commentForm = document.createElement("form");
-  //   commentForm.classList.add("_commentForm");
-  //   songList.appendChild(commentForm);
+    let commentForm = document.createElement("form");
+    commentForm.classList.add("_commentForm");
+    commentForm.innerHTML = `
+    <input class="_commentName" text="text" name="name" placeholder="Your name">
+    <br>
+    <input class="_commentBody" type="text" name="commentBody" placeholder="comment">
+    <br>
+    <input class="_commentSubmit" type="submit" value="Add Comment">
+    `
+    songList.appendChild(commentForm);
 
-  // ----------------------------------------
   selectedAlbumJson.comments.forEach((comment) => {
     let commentName = document.createElement("h3");
     commentName.classList.add("_commentName");
