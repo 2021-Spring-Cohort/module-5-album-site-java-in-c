@@ -24,6 +24,7 @@ const createArtistForHeader = function(album) {
     
 }
 
+
 const updateSongList = function(album) {
     let songList = document.querySelector("._songList");
     clearChildren(songList);
@@ -78,8 +79,16 @@ const createRatingForHeader = function(album) {
     songHeader.appendChild(ratingDiv);
 }
 
+const updateSelectedAlbum = function(newJson) {
+    newJson.forEach(album => {
+        if(selectedAlbumJson.id === album.id) {
+            selectedAlbumJson = album;
+        }
+    })
 
+}
 
+export {updateSelectedAlbum}
 export {selectedAlbumJson}
 export {updateSongList}
 export {clearChildren}
