@@ -69,6 +69,7 @@ main ._songs ._songContainer {
 }
 
 main ._songs ._songContainer ._songHeader {
+  color: whitesmoke;
   height: 25%;
   display: flex;
   justify-content: center;
