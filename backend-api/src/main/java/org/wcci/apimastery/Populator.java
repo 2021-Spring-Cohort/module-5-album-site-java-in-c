@@ -37,6 +37,9 @@ public class Populator implements CommandLineRunner {
 
 
         AndJusticeForAll.addComment(new Comment("Awesome Album!", "Branden Webb"));
+        EmergencyTsunami.addComment(new Comment("I love this Album!", "Bishnu"));
+        igor.addComment(new Comment("I don't like this Album!", "Fathi"));
+        AndJusticeForAll.addComment(new Comment("Very chill and relax sound!", "Miguel"));
         albumRepository.save(EmergencyTsunami);
         albumRepository.save(NineteenEightyNine);
         albumRepository.save(igor);

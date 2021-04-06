@@ -1,7 +1,6 @@
 package org.wcci.apimastery.Entity;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 
 @Embeddable
 public class Comment {
@@ -31,4 +30,3 @@ public class Comment {
         this.name = name;
     }
 }
-
