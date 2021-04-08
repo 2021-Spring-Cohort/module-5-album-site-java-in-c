@@ -1,6 +1,8 @@
 package org.wcci.apimastery.Entity;
 
 import javax.persistence.Embeddable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Embeddable
 public class Comment {
@@ -10,8 +12,8 @@ public class Comment {
     protected Comment(){}
 
     public Comment(String body, String name) {
-        this.body = body;
         this.name = name;
+        this.body = body;
     }
 
     public String getBody() {
@@ -29,4 +31,5 @@ public class Comment {
     public void setName(String name) {
         this.name = name;
     }
+
 }
