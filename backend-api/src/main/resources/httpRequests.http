@@ -29,3 +29,13 @@ Content-Type: application/json
 "name": "bobbbbbb",
 "url": ""
 }
+
+### Add a Comment
+POST localhost:8080/api/albums/1/comment
+Content-Type: application/json
+
+{
+  "body": "bob",
+  "name": "asdasd"
+}
+
