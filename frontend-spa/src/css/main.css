@@ -339,16 +339,29 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm {
   background-color: white;
-  height: 90%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum {
   width: 75%;
   font-weight: 900;
-  height: 100%;
+  height: 200%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,8 +374,9 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumNameDiv ._albumInputs {
   width: 100%;
-  height: 25px;
+  height: 30px;
   padding: 5px;
+  font-size: 1.1em;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumArtistDiv {
@@ -371,8 +385,9 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumArtistDiv ._albumInputs {
   width: 100%;
-  height: 25px;
+  height: 30px;
   padding: 5px;
+  font-size: 1.1em;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumRatingDiv {
@@ -381,12 +396,35 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumRatingDiv ._albumInputs {
   width: 100%;
-  height: 25px;
+  height: 30px;
   padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumLabelDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumLabelDiv ._albumInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumCoverDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._actualAddAlbumForm ._formForAlbum ._albumCoverDiv ._albumInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addAlbumForm ._addAlbumsFormHeading {
-  height: 10%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,16 +456,29 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm {
   background-color: white;
-  height: 90%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm::-webkit-scrollbar {
+  width: 5px;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
 
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong {
   width: 75%;
   font-weight: 900;
-  height: 100%;
+  height: 200%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,8 +518,19 @@ main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabCon
   font-size: 1.1em;
 }
 
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songDurationDiv {
+  width: 100%;
+}
+
+main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._actualAddSongForm ._formForSong ._songDurationDiv ._songInputs {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
 main ._albums ._popUpPages ._popUpPagesContainer ._popUpPagesMain ._submitTabContent ._submitTabContainer ._submitTabContentMain ._addSongForm ._addSongsFormHeading {
-  height: 10%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;

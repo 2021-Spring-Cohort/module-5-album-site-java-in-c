@@ -49,6 +49,20 @@ const shouldGoBack = () => {
     flag = true;
   });
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // sets popup page on and off
 const showLoginPage = () => {
   pianoButton.addEventListener("click", () => {
