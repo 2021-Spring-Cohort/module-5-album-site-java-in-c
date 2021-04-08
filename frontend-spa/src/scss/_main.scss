@@ -92,6 +92,31 @@ main {
               background-color: rgb(174, 174, 177);
             }
           }
+          ._commentForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ._commentDiv {
+              ._commentSubmit {
+                border: none;
+                padding: 5px;
+                margin-top: 10px;
+                cursor: pointer;
+                background-color: gray;
+                &:hover {
+                  background-color: rgb(104, 104, 104);
+                }
+              }
+              ._commentName {
+                border: none;
+                padding: 5px;
+              }
+              ._commentBody {
+                border: none;
+                padding: 5px;
+              }
+            }
+          }
         }
       }
     }

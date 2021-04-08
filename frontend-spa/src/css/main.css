@@ -153,6 +153,34 @@ main ._songs ._songContainer ._mainSongContent ._songList ._singleSong:hover {
   background-color: #aeaeb1;
 }
 
+main ._songs ._songContainer ._mainSongContent ._songList ._commentForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentForm ._commentDiv ._commentSubmit {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: gray;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentForm ._commentDiv ._commentSubmit:hover {
+  background-color: #686868;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentForm ._commentDiv ._commentName {
+  border: none;
+  padding: 5px;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentForm ._commentDiv ._commentBody {
+  border: none;
+  padding: 5px;
+}
+
 main ._albums {
   background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
   grid-row: 1 / 5;
