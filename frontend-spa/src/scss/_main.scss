@@ -58,12 +58,18 @@ main {
             }
           }
         }
-
         ._songList {
           height: 90%;
           display: flex;
           flex-direction: column;
           overflow-y: scroll;
+          ._commentNameDiv {
+            display: flex;
+            margin-left: 5px;
+            ._commentBody {
+              margin-left: 5px;
+            }
+          }
           &::-webkit-scrollbar {
             width: 5px;
           }

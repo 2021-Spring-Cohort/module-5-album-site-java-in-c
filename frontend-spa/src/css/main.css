@@ -123,6 +123,15 @@ main ._songs ._songContainer ._mainSongContent ._songList {
   justify-content: flex-start;
 }
 
+main ._songs ._songContainer ._mainSongContent ._songList ._commentNameDiv {
+  display: flex;
+  margin-left: 5px;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentNameDiv ._commentBody {
+  margin-left: 5px;
+}
+
 main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar {
   width: 5px;
 }
