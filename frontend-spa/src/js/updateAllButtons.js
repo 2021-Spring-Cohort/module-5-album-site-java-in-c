@@ -71,8 +71,10 @@ const clickOnCommentButton = function () {
       .then((newJson) => makeNewComment(data, newJson))
       .then((lastJson) => updateSelectedAlbum(lastJson));
   });
+  let hrLine = document.createElement("hr");
+  hrLine.classList.add("_hrLine");
   songList.appendChild(commentForm);
-
+  songList.appendChild(hrLine);
   selectedAlbumJson.comments.forEach((comment) => {
     let commentName = document.createElement("h3");
     commentName.classList.add("_commentNameDiv");

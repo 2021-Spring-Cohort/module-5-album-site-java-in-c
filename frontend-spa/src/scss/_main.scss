@@ -63,9 +63,22 @@ main {
           display: flex;
           flex-direction: column;
           overflow-y: scroll;
+          background: linear-gradient(
+            to bottom,
+            rgb(143, 143, 143),
+            rgb(155, 155, 155)
+          );
+          ._hrLine {
+            margin: 10px;
+          }
           ._commentNameDiv {
             display: flex;
             margin-left: 5px;
+            background: linear-gradient(
+              to bottom,
+              rgb(180, 179, 179),
+              rgb(185, 185, 185)
+            );
             ._commentBody {
               margin-left: 5px;
             }
@@ -102,6 +115,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            background: transparent;
             ._commentDiv {
               ._commentSubmit {
                 border: none;
