@@ -120,7 +120,22 @@ main ._songs ._songContainer ._mainSongContent ._songList {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  background: linear-gradient(to bottom, #8f8f8f, #9b9b9b);
   justify-content: flex-start;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._hrLine {
+  margin: 10px;
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentNameDiv {
+  display: flex;
+  margin-left: 5px;
+  background: linear-gradient(to bottom, #b4b3b3, #b9b9b9);
+}
+
+main ._songs ._songContainer ._mainSongContent ._songList ._commentNameDiv ._commentBody {
+  margin-left: 5px;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList::-webkit-scrollbar {
@@ -157,6 +172,7 @@ main ._songs ._songContainer ._mainSongContent ._songList ._commentForm {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
 main ._songs ._songContainer ._mainSongContent ._songList ._commentForm ._commentDiv ._commentSubmit {

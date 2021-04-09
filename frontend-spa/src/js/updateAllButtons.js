@@ -71,30 +71,33 @@ const clickOnCommentButton = function () {
       .then((newJson) => makeNewComment(data, newJson))
       .then((lastJson) => updateSelectedAlbum(lastJson));
   });
+  let hrLine = document.createElement("hr");
+  hrLine.classList.add("_hrLine");
   songList.appendChild(commentForm);
-
+  songList.appendChild(hrLine);
   selectedAlbumJson.comments.forEach((comment) => {
     let commentName = document.createElement("h3");
-    commentName.classList.add("_commentName");
-    commentName.innerText = comment.name;
+    commentName.classList.add("_commentNameDiv");
+    commentName.innerText = comment.name + ": ";
     songList.appendChild(commentName);
+
     let commentBody = document.createElement("p");
     commentBody.classList.add("_commentBody");
     commentBody.innerText = comment.body;
-    songList.appendChild(commentBody);
+    commentName.appendChild(commentBody);
   });
 };
 
 const makeNewComment = function (newJson, otherJson) {
   let songList = document.querySelector("._songList");
   let commentName = document.createElement("h3");
-  commentName.classList.add("_commentName");
+  commentName.classList.add("_commentNameDiv");
   commentName.innerText = newJson.name;
   songList.appendChild(commentName);
   let commentBody = document.createElement("p");
   commentBody.classList.add("_commentBody");
   commentBody.innerText = newJson.body;
-  songList.appendChild(commentBody);
+  commentName.appendChild(commentBody);
   return otherJson;
 };
 
