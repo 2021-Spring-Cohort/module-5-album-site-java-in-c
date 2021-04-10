@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Module 5 Project</title>
+        <link rel="stylesheet" href="/src/css/layout.css" />
+        <link rel="stylesheet" href="/src/css/main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;1,200;1,400&family=Roboto+Mono:ital,wght@0,400;1,100;1,200&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <div class="_container">
+        <header>
+            <div class="_headerTitle">
+              <h1>Java In C#</h1>
+            </div>
+            <div class="_headerSearch">
+              <input
+                class="_search"
+                type="search"
+                placeholder="songs / albums / artists"
+              />
+            </div>
+            <div class="_headerMenu">
+              <img
+                src="https://images.emojiterra.com/google/android-pie/512px/1f3b9.png"
+              />
+            </div>
+          </header>
+          <main>
+            <div class="_songs">
+                <div class="_songContainer">
+                  <section class="_songHeader">
+                    <div class="_selectedAlbum">                   
+                    </div>
+                  </section>
+                  <section class="_mainSongContent">
+                    <nav class="_songNav">
+                      <h3 class="_navBarSongLists _songButton">Songs</h3>
+                      <h3 class="_navBarSongLists _playlistButton">About</h3>
+                      <h3 class="_navBarSongLists _commentButton">Comment</h3>
+                    </nav>
+                    <div class="_songList">    
+                    <div class="_commentSection"></div>                 
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="_albums">
+                <div class="_popUpPages">
+                  <div class="_popUpPagesContainer">
+                    <div class="_popUpPagesHeader">
+                      <div class="_loginTab"><h4>Account</h4></div>
+                      <div class="_submitTab"><h4>Submit Your Own ?</h4></div>
+                      <div class="_contactTab"><h4>Contact</h4></div>
+                      <div class="_learnTab"><h4>Learn More..</h4></div>
+                    </div>
+                    <!-- -------------------------Pop Up Contents ------------------ -->
+                    <!-- -------------------------Pop Up Contents ------------------ -->
+                    <!-- -------------------------Pop Up Contents ------------------ -->
+                    <div class="_popUpPagesMain">
+                      <!-- -----------------Account Tab ---------------- -->
+                      <!-- -----------------Account Tab ---------------- -->
+                      <!-- -----------------Account Tab ---------------- -->
+                      <div class="_loginTabContent">
+                        <div class="_loginForm">
+                          <div class="_loginFormHeader">
+                            <div class="_loginFormSignIn">Sign In</div>
+                            <div class="_loginFormSignUp">Sign Up</div>
+                          </div>
+                          <div class="_loginFormMain">
+                            <div class="_signIn">
+                              <form class="_signInForm">
+                                <label for="username">Username</label>
+                                <input class="_signInFormInput" type="username" name="username" />
+                                <br />
+                                <label for="password">Password</label>
+                                <input class="_signInFormInput" type="password" name="password" />
+                                <br />
+                                <button class="_signInButton" type="submit">Sign In</button>
+                              </form>
+                            </div>
+                            <div class="_signUp">
+                              <form class="_signUpForm">
+                                <label for="username">Create Username</label>
+                                <input class="_signUpFormInput" type="username" name="username" />
+                                <br />
+                                <label for="password">Create Password</label>
+                                <input class="_signUpFormInput" type="password" name="password" />
+                                <br />
+                                <label for="email">Enter Email</label>
+                                <input class="_signUpFormInput" type="email" name="email" />
+                                <br />
+                                <button class="_signUpButton" type="submit">Sign Up</button>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="_loginFormFooter"></div>
+                        </div>
+                      </div>
+                      <!-- -----------------Submit Your Own ---------------- -->
+                      <!-- -----------------Submit Your Own ---------------- -->
+                      <!-- -----------------Submit Your Own ---------------- -->
+                      <div class="_submitTabContent">
+                        <div class="_submitTabContainer">
+                          <div class="_submitTabContentHeader">
+                            <p>
+                              Submit Albums And Songs Here!
+                            </p>
+                          </div>
+                          <div class="_submitTabContentMain">
+                            <div class="_addAlbumForm">
+                              <div class="_addAlbumsFormHeading">
+                                <h2>Add Albums</h2>
+                              </div>
+                              <hr>
+                              <div class="_actualAddAlbumForm">
+                                <form class="_formForAlbum">
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <div class="_albumNameDiv">
+                                    <label for="albumName">Title: </label>
+                                    <br>
+                                    <input class="_albumInputs" type="text" placeholder="name" name="albumName">
+                                    <br>
+                                  </div>
+                                  <div class="_albumArtistDiv">
+                                    <label for="albumArtist">Artist: </label>
+                                    <br>
+                                    <input class="_albumInputs" type="text" placeholder="artist" name="albumArtist">
+                                    <br>
+                                  </div>
+                                  <div class="_albumLabelDiv">
+                                    <label for="albumArtist">Record-Label: </label>
+                                    <br>
+                                    <input class="_albumInputs" type="text" placeholder="artist" name="albumArtist">
+                                    <br>
+                                  </div>
+                                  <div class="_albumCoverDiv">
+                                    <label for="albumArtist">Cover: </label>
+                                    <br>
+                                    <input class="_albumInputs" type="text" placeholder="image url" name="albumArtist">
+                                    <br>
+                                  </div>
+
+                                  <div class="_albumRatingDiv">
+                                    <label for="albumRating">Rating: </label>
+                                    <br>
+                                    <input class="_albumInputs" type="text" placeholder="rating" name="albumRating">
+                                    <br>
+                                  </div>
+                                  <button class="_submitAlbumButton" type="submit">Add Album</button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="_addSongForm">
+                              <div class="_addSongsFormHeading">
+                                <h2>Add Songs</h2>
+                              </div>
+                              <hr>
+                              <div class="_actualAddSongForm">
+                                <form class="_formForSong">
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <div class="_songArtistDiv">
+                                    <label for="SongArtist">Select Album: </label>
+                                    <br>
+                                    <!-- <input class="_songInputs" type="text" placeholder="album" name="songAlbum"> -->
+                                      <select>
+                                        <option>Option 1</option>
+                                      </select>
+                                    <br>
+                                  </div>
+                                  <div class="_songNameDiv">
+                                    <label for="SongName">Song Name: </label>
+                                    <br>
+                                    <input class="_songInputs" type="text" placeholder="name" name="SongName">
+                                    <br>
+                                  </div>
+                                  <div class="_songArtistDiv">
+                                    <label for="SongArtist">Song Artist: </label>
+                                    <br>
+                                    <input class="_songInputs" type="text" placeholder="artist" name="SongArtist">
+                                    <br>
+                                  </div>
+                                  <div class="_songRatingDiv">
+                                    <label for="SongRating">Song Rating: </label>
+                                    <br>
+                                    <input class="_songInputs" type="text" placeholder="rating" name="SongRating">
+                                    <br>
+                                  </div>
+                                  <div class="_songDurationDiv">
+                                    <label for="SongDuration">Song Duration: </label>
+                                    <br>
+                                    <input class="_songInputs" type="text" placeholder="duration" name="SongDuration">
+                                    <br>
+                                  </div>
+                                  <button class="_submitSongButton" type="submit">Add Song</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- -----------------Contact Tab ---------------- -->
+                      <!-- -----------------Contact Tab ---------------- -->
+                      <!-- -----------------Contact Tab ---------------- -->
+                      <div class="_contactTabContent"></div>
+                      <!-- -----------------Learn More Tab ---------------- -->
+                      <!-- -----------------Learn More Tab ---------------- -->
+                      <!-- -----------------Learn More Tab ---------------- -->
+                      <div class="_learnTabContent"></div>
+                    </div>
+                    <div class="_popUpPagesFooter">
+                      <div class="_goBack"><i>--- Go back</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_albumStorage"></div>
+              </div>
+          </main>
+          <footer>
+            <div class="_footerTitle">
+              <h3>Song</h3>
+            </div>
+            <hr class="_footerLine" />
+            <div>
+              <img
+                class="_playImage"
+                src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f9.png"
+              />
+            </div>
+          </footer>
+        </div>
+        <script src="/src/js/app.js" type="module" defer></script>
+    </div>
+</body>
+</html>
