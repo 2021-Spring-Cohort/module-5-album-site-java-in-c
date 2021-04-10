@@ -772,4 +772,68 @@ footer ._playImage {
 ._selectedAlbumImage {
   width: 100px;
 }
+
+._songList li {
+  list-style-type: none;
+}
+
+._songList ._aboutSingleSong {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv1 h4 {
+  margin-left: 35%;
+  padding: 2px;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv2 ._commentDiv ._commentSubmit {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: gray;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv2 ._commentDiv ._commentSubmit:hover {
+  background-color: #686868;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv2 ._commentDiv ._commentName {
+  border: none;
+  padding: 5px;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv2 ._commentDiv ._commentBody {
+  border: none;
+  padding: 5px;
+}
+
+._songList ._aboutSingleSong ._insideSingleSongDiv3 {
+  background-color: blueviolet;
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
