@@ -74,6 +74,7 @@ const updateSongList = function (album) {
         <br>
         <button class="_commentSubmit">Add Review</button>
     </div>
+    <hr class="_hrLine1">
       `;
       songList.appendChild(singleSongDiv);
       singleSongDiv.appendChild(insideSingleSongDiv1);

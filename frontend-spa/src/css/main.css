@@ -773,6 +773,11 @@ footer ._playImage {
   width: 100px;
 }
 
+._songList ._hrLine1 {
+  margin: 10px;
+  width: 500px;
+}
+
 ._songList li {
   list-style-type: none;
 }
