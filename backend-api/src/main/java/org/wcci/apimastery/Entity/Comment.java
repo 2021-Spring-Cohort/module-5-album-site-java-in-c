@@ -1,8 +1,6 @@
 package org.wcci.apimastery.Entity;
 
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Embeddable
 public class Comment {
