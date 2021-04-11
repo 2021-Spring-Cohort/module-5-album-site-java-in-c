@@ -8,7 +8,6 @@ public class Comment {
     private String name;
 
     protected Comment(){}
-
     public Comment(String body, String name) {
         this.name = name;
         this.body = body;

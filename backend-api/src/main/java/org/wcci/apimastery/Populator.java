@@ -1,6 +1,5 @@
 package org.wcci.apimastery;
 
-import org.aspectj.weaver.ast.And;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wcci.apimastery.Entity.Album;
@@ -101,10 +100,14 @@ public class Populator implements CommandLineRunner {
         Song goneGoneThankYou = new Song("Gone, Gone/Thank You", "sample", igor, 2, "6:16");
         Song iDontLoveYouAnymore = new Song("I Don't Love You Anymore", "sample", igor, 3, "2:42");
         Song areWeStillFriends = new Song("Are We Still Friends", "sample", igor, 5 , "4:26");
+
+
+
         Metallica.addAlbum(AndJusticeForAll);
         TylerSwift.addAlbum(NineteenEightyNine);
         Nav.addAlbum(EmergencyTsunami);
         tylerTheCreator.addAlbum(igor);
+
         WelcomeToNewYork.addArtist(TylerSwift);
         BlankSpace.addArtist(TylerSwift);
         Style.addArtist(TylerSwift);
@@ -138,6 +141,20 @@ public class Populator implements CommandLineRunner {
         goneGoneThankYou.addArtist(tylerTheCreator);
         iDontLoveYouAnymore.addArtist(tylerTheCreator);
         areWeStillFriends.addArtist(tylerTheCreator);
+
+
+        IknowPlaces.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        ThisLove.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        HowYouGetTheGirl.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        BadBlood.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        IWishYouWould.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        ShakeItOff.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        YoungWheezy.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        Repercussions.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        dyersEve.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        igorsTheme.addCommentForSong(new Comment("I love this song", "Bishnu"));
+        one.addCommentForSong(new Comment("I love this song", "Bishnu"));
+
         songRepository.save(YoungWheezy);
         songRepository.save(Repercussions);
         songRepository.save(VetementSocks);
@@ -174,6 +191,9 @@ public class Populator implements CommandLineRunner {
         songRepository.save(ThisLove);
         songRepository.save(IknowPlaces);
         songRepository.save(Clean);
+
+
+
     }
 
 }
