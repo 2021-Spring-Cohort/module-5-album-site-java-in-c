@@ -6,8 +6,6 @@ import java.util.Collection;
 
 @Entity
 public class Album {
-
-
     @Id
     @GeneratedValue
     private long id;

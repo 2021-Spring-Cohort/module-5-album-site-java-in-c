@@ -24,6 +24,17 @@ public class Song {
     @ElementCollection
     private Collection<Comment> comments;
 
+    public Song(String name, String lyrics, Album album, int rating, String duration) {
+        this.name = name;
+        this.lyrics = lyrics;
+        this.album = album;
+        this.rating = rating;
+        this.duration = duration;
+        this.artists = new ArrayList<>();
+        this.comments = new ArrayList<>();
+
+    }
+
     protected Song() {
 
     }
@@ -39,16 +50,10 @@ public class Song {
     public Collection<Comment> getComments() {
         return comments;
     }
-
-    public Song(String name, String lyrics, Album album, int rating, String duration) {
-        this.name = name;
-        this.lyrics = lyrics;
-        this.album = album;
-        this.rating = rating;
-        this.duration = duration;
-        artists = new ArrayList<>();
-
+    public void addComment(Comment comment) {
+        comments.add(comment);
     }
+
 
     public void addArtist(Artist artist) {
         artists.add(artist);

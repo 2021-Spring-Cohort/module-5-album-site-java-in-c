@@ -2,19 +2,30 @@ package org.wcci.apimastery.controller;
 
 import org.springframework.web.bind.annotation.*;
 import org.wcci.apimastery.Entity.Album;
-import org.wcci.apimastery.Entity.*;
+import org.wcci.apimastery.Entity.Comment;
+import org.wcci.apimastery.Entity.Song;
 import org.wcci.apimastery.Service.AlbumStorage;
 import org.wcci.apimastery.Service.SongStorage;
 
 @RestController
 public class MainController {
-    private AlbumStorage albumStorage;
-    private SongStorage songStorage;
+    private final AlbumStorage albumStorage;
+    private final SongStorage songStorage;
 
     public MainController(AlbumStorage albumStorage, SongStorage songStorage) {
         this.albumStorage = albumStorage;
-        this.songStorage =  songStorage;
+        this.songStorage = songStorage;
     }
+
+    @PostMapping("/api/song/{id}/comment")
+    public Iterable<Album> addReviewForSongs(@RequestBody Comment comments, @PathVariable long id) {
+        Song song = songStorage.retrieveSongById(id);
+        Comment comment = new Comment(comments.getBody(), comments.getName());
+        song.addComment(comment);
+        songStorage.saveSong(song);
+        return albumStorage.getAllAlbums();
+    }
+
 
     @GetMapping("/api/albums")
     public Iterable<Album> showAllTheAlbums(){
@@ -24,6 +35,7 @@ public class MainController {
     public void deleteAlbum(@PathVariable long id){
         albumStorage.deleteAlbumById(id);
     }
+
     @PostMapping("/api/albums/{id}/comment")
     public Iterable<Album> addComment(@RequestBody Comment comment, @PathVariable long id) {
         Album album = albumStorage.retrieveAlbumById(id);
@@ -32,9 +44,8 @@ public class MainController {
         albumStorage.saveAlbum(album);
 
         return albumStorage.getAllAlbums();
-
-
     }
+
     @PostMapping("/api/albums")
     public void addAlbum(@RequestBody Album album){
         albumStorage.saveAlbum(album);

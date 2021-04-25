@@ -1,5 +1,6 @@
 package org.wcci.apimastery.Entity;
 
+
 import javax.persistence.Embeddable;
 
 @Embeddable

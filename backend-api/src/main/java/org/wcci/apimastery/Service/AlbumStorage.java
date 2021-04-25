@@ -3,6 +3,7 @@ package org.wcci.apimastery.Service;
 import org.springframework.stereotype.Service;
 import org.wcci.apimastery.Entity.Album;
 
+
 @Service
 public class AlbumStorage {
 
@@ -27,7 +28,8 @@ public class AlbumStorage {
         return albumRepo.findAll();
     }
 
-    public Album retrieveAlbumById(long id) { return albumRepo.findById(id).get();
-}
+    public Album retrieveAlbumById(long id) {
+        return albumRepo.findById(id).get();
+    }
 }
 

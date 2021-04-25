@@ -1,6 +1,6 @@
 ### Get all Albums
 GET  localhost:8080/api/albums
-
+Active: application/json
 
 ### Delete an Album
 DELETE localhost:8080/api/albums/1
@@ -29,6 +29,17 @@ Content-Type: application/json
 "name": "bobbbbbb",
 "url": ""
 }
+
+### add a comment for song
+POST  localhost:8080/api/song/1/comment
+Content-Type: application/json
+
+{
+  "body": "this is the body",
+  "name": "Bishnu"
+}
+
+
 
 ### Add a Comment
 POST localhost:8080/api/albums/1/comment

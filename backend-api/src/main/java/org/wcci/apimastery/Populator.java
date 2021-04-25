@@ -1,6 +1,5 @@
 package org.wcci.apimastery;
 
-import org.aspectj.weaver.ast.And;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wcci.apimastery.Entity.Album;
@@ -11,11 +10,16 @@ import org.wcci.apimastery.Service.AlbumRepository;
 import org.wcci.apimastery.Service.ArtistRepository;
 import org.wcci.apimastery.Service.SongRepository;
 
+
 @Component
 public class Populator implements CommandLineRunner {
-    private AlbumRepository albumRepository;
-    private SongRepository songRepository;
-    private ArtistRepository artistRepository;
+
+
+    private final AlbumRepository albumRepository;
+
+    private final SongRepository songRepository;
+
+    private final ArtistRepository artistRepository;
 
     public Populator(AlbumRepository albumRepository, SongRepository songRepository, ArtistRepository artistRepository) {
         this.albumRepository = albumRepository;
@@ -101,6 +105,17 @@ public class Populator implements CommandLineRunner {
         Song goneGoneThankYou = new Song("Gone, Gone/Thank You", "sample", igor, 2, "6:16");
         Song iDontLoveYouAnymore = new Song("I Don't Love You Anymore", "sample", igor, 3, "2:42");
         Song areWeStillFriends = new Song("Are We Still Friends", "sample", igor, 5 , "4:26");
+
+
+        goneGoneThankYou.addComment(new Comment("this is body", "Bishnu"));
+        YoungWheezy.addComment(new Comment("this is body", "Bishnu"));
+        puppet.addComment(new Comment("this is body", "Bishnu"));
+        whatsGood.addComment(new Comment("this is body", "Bishnu"));
+        BadBlood.addComment(new Comment("this is body", "Bishnu"));
+        areWeStillFriends.addComment(new Comment("this is body", "Bishnu"));
+
+
+
         Metallica.addAlbum(AndJusticeForAll);
         TylerSwift.addAlbum(NineteenEightyNine);
         Nav.addAlbum(EmergencyTsunami);

@@ -5,4 +5,5 @@ import org.wcci.apimastery.Entity.Artist;
 
 public interface ArtistRepository extends CrudRepository<Artist, Long> {
 
+
 }

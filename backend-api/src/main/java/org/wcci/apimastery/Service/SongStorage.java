@@ -1,15 +1,19 @@
 package org.wcci.apimastery.Service;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.wcci.apimastery.Entity.Song;
 
 @Service
 public class SongStorage {
-    private SongRepository songRepository;
+    @Autowired
+    public SongRepository songRepository;
 
     public SongStorage(SongRepository songRepository) {
         this.songRepository = songRepository;
     }
+
     public void saveSong(Song song) {
         songRepository.save(song);
     }
@@ -23,3 +27,4 @@ public class SongStorage {
         return songRepository.findById(id).get();
     }
 }
+
